@@ -83,7 +83,7 @@ def profile(profile_id):
 @app.route('/commnets')
 def comments():
    
-    return render_template('comments.html')
+    return render_template('projects.html')
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)
