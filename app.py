@@ -25,7 +25,7 @@ def home():
     profiles = response_profiles.json()
     totalUsers = len(profiles)
     data = getData(projects=projects)
-    return render_template ('dashboard.html', projects=projects, data=data, profiles=profiles, totalUsers=totalUsers)
+    return render_template ('home.html', projects=projects, data=data, profiles=profiles, totalUsers=totalUsers)
 
 @app.route('/projects')
 def projects():
