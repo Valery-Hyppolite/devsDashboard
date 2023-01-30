@@ -6,7 +6,7 @@ from pathlib import Path
 from utils import getData
 
 load_dotenv()
-env_path = Path(".")/'.flaskenv'
+env_path = Path(".")/'.env'
 load_dotenv(dotenv_path=env_path)
 
 
