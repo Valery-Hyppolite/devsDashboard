@@ -80,10 +80,10 @@ def profile(profile_id):
     
     return render_template('user.html', profile=profile, projects=projects, data=data)
 
-@app.route('/commnets')
-def comments():
+# @app.route('/commnets')
+# def comments():
    
-    return render_template('projects.html')
+#     return render_template('')
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)
