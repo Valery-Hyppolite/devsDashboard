@@ -68,13 +68,15 @@ def profile(profile_id):
     profile = response.json()
     projects_list = response_projects.json()
 
-    allProjects = []
-
-    for project in projects_list:
-        if project['owner']['id'] == profile_id:
-            #print(f"profile id: {profile_id}, project id: {project['id']}")
-            allProjects.append(project)
+    allProjects = [project for project in projects_list if project['owner']['id'] == profile_id]
     projects = allProjects
+    
+    # allProjects = []
+    # for project in projects_list:
+    #     if project['owner']['id'] == profile_id:
+    #         #print(f"profile id: {profile_id}, project id: {project['id']}")
+    #         allProjects.append(project)
+    # projects = allProjects
 
     data = getData(projects=projects)
     
