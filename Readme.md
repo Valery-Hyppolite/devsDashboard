@@ -1,4 +1,6 @@
-Welcome to the devsDashboard wiki!
+Welcome to the devsDash
+
+## DEMO Link: https://devsdash.herokuapp.com/
 
 A flask Application that makes API calls to a Django database server, **Discover-Dev.** which gets users' information such as their profiles and projects. This is a dashboard view of the Discover-Dev application that keeps track of all new users, projects, and comments. This app provides an overview of all activities that are happening on the server side and updates automatically whenever any changes are detected on the server.
 
